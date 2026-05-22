@@ -1,0 +1,53 @@
+/* Configuración general */
+body {
+    background-color: #e9ecef; /* Color de fondo gris claro para toda la página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo para las imágenes para que no se desborden y tengan bordes consistentes */
+.img-thumbnail {
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================================================
+   🎨 TAREA 2: SECCIÓN CSS
+   ========================================================================== */
+
+/* Todos los h3 son verdes por defecto */
+h3 {
+    color: #2b9348; /* Verde */
+    font-weight: 700;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Clase CSS que aplica color azul a tres h3 específicos */
+.blue-text {
+    color: #0077b6; /* Azul */
+}
+
+/* Clase CSS que aplica color rojo a un solo h3 específico */
+.red-text {
+    color: #d90429; /* Rojo */
+}
+
+/* ==========================================================================
+   🎯 TAREA 3: INTERACCIÓN CON CSS
+   ========================================================================== */
+
+/* Cambia de color cuando pasas el mouse por encima */
+h3:hover {
+    color: #ff7096 !important; /* Rosa brillante en hover (Color de interacción 1) */
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Cambia de color cuando haces clic (manteniendo presionado) */
+h3:active {
+    color: #f77f00 !important; /* Naranja en active (Color de interacción 2) */
+    transform: scale(0.95);
+}
